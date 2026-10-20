@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64"><Configuration>Debug</Configuration><Platform>x64</Platform></ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64"><Configuration>Release</Configuration><Platform>x64</Platform></ProjectConfiguration>
+    <ProjectConfiguration Include="ASan|x64"><Configuration>ASan</Configuration><Platform>x64</Platform></ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals"><VCProjectVersion>17.0</VCProjectVersion><Keyword>Win32Proj</Keyword><ProjectGuid>{F89E363D-A2E4-4B43-9E5F-AB402C118053}</ProjectGuid><RootNamespace>WkyImageStudio</RootNamespace><WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion></PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration"><ConfigurationType>Application</ConfigurationType><UseDebugLibraries>false</UseDebugLibraries><PlatformToolset>v143</PlatformToolset><CharacterSet>Unicode</CharacterSet></PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup><OutDir>$(ProjectDir)bin\$(Configuration)\</OutDir><IntDir>$(ProjectDir)build\$(Configuration)\</IntDir><TargetName>ile chan的图像工坊</TargetName><LinkIncremental>false</LinkIncremental></PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='ASan'"><EnableASAN>true</EnableASAN></PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile><AdditionalIncludeDirectories>$(ProjectDir)algorithms\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories><WarningLevel>Level3</WarningLevel><Optimization>MaxSpeed</Optimization><RuntimeLibrary>MultiThreaded</RuntimeLibrary><LanguageStandard>stdcpp17</LanguageStandard><PreprocessorDefinitions>UNICODE;_UNICODE;NOMINMAX;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions><AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions><DebugInformationFormat>ProgramDatabase</DebugInformationFormat><MultiProcessorCompilation>true</MultiProcessorCompilation></ClCompile>
+    <Link><SubSystem>Windows</SubSystem><AdditionalDependencies>comctl32.lib;windowscodecs.lib;ole32.lib;oleaut32.lib;shell32.lib;uuid.lib;user32.lib;gdi32.lib;%(AdditionalDependencies)</AdditionalDependencies><GenerateDebugInformation>true</GenerateDebugInformation><AdditionalOptions>/PDBALTPATH:%_PDB% %(AdditionalOptions)</AdditionalOptions></Link>
+    <Manifest><AdditionalManifestFiles>src\app.manifest;%(AdditionalManifestFiles)</AdditionalManifestFiles></Manifest>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\App.cpp" /><ClCompile Include="src\ImageEngine.cpp" /><ClCompile Include="src\ImageIO.cpp" /><ClCompile Include="src\SelfTests.cpp" />
+    <ClCompile Include="algorithms\src\wky_ALG_Inverting.cpp" /><ClCompile Include="algorithms\src\wky_ALG_Histogram.cpp" /><ClCompile Include="algorithms\src\wky_ALG_LinearStretch.cpp" />
+    <ClCompile Include="algorithms\src\wky_ALG_AverageFilter.cpp" /><ClCompile Include="algorithms\src\wky_ALG_MedianFilter.cpp" /><ClCompile Include="algorithms\src\wky_ALG_BinImgFilter.cpp" />
+    <ClCompile Include="algorithms\src\wky_ALG_EdgeDetect.cpp" /><ClCompile Include="algorithms\src\wky_ALG_EdgeSharpen.cpp" />
+    <ClCompile Include="algorithms\src\wky_ALG_Threshold.cpp" /><ClCompile Include="algorithms\src\wky_ALG_Cluster.cpp" /><ClCompile Include="algorithms\src\wky_ALG_2DHistogram.cpp" />
+    <ClCompile Include="algorithms\src\wky_ALG_ContourTrace.cpp" /><ClCompile Include="algorithms\src\wky_ALG_ContourFill.cpp" /><ClCompile Include="algorithms\src\wky_ALG_HoughLine.cpp" />
+    <ClCompile Include="algorithms\src\bmpFile.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\ImageEngine.h" />
+    <ClInclude Include="algorithms\include\bmpFile.h" />
+    <ClInclude Include="algorithms\include\wky_algorithm_support.h" />
+    <ClInclude Include="algorithms\include\wky_ALG_2DHistogram.h" />
+    <ClInclude Include="algorithms\include\wky_ALG_AverageFilter.h" />
+    <ClInclude Include="algorithms\include\wky_ALG_BinImgFilter.h" />
+    <ClInclude Include="algorithms\include\wky_ALG_Cluster.h" />
+    <ClInclude Include="algorithms\include\wky_ALG_ContourFill.h" />
+    <ClInclude Include="algorithms\include\wky_ALG_ContourTrace.h" />
+    <ClInclude Include="algorithms\include\wky_ALG_EdgeDetect.h" />
+    <ClInclude Include="algorithms\include\wky_ALG_EdgeSharpen.h" />
+    <ClInclude Include="algorithms\include\wky_ALG_Histogram.h" />
+    <ClInclude Include="algorithms\include\wky_ALG_HoughLine.h" />
+    <ClInclude Include="algorithms\include\wky_ALG_Inverting.h" />
+    <ClInclude Include="algorithms\include\wky_ALG_LinearStretch.h" />
+    <ClInclude Include="algorithms\include\wky_ALG_MedianFilter.h" />
+    <ClInclude Include="algorithms\include\wky_ALG_Threshold.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>

@@ -1,0 +1,13 @@
+exif_2.jpg	exif_2_expected.png	5
+exif_3.jpg	exif_3_expected.png	5
+exif_4.jpg	exif_4_expected.png	5
+exif_5.jpg	exif_5_expected.png	5
+exif_6.jpg	exif_6_expected.png	5
+exif_7.jpg	exif_7_expected.png	5
+exif_8.jpg	exif_8_expected.png	5
+alpha.png	alpha_expected.png	1
+topdown.bmp	topdown_expected.png	0
+color_palette.bmp	color_palette_expected.png	0
+icon.ico	icon_expected.png	0
+animated.gif	animated_expected.png	0
+multipage.tiff	multipage_expected.png	0

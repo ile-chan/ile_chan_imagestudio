@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <ItemGroup>
+    <Filter Include="应用">
+      <UniqueIdentifier>{71E06CC8-0B0E-486E-AE5D-7DA273104063}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="算法源文件">
+      <UniqueIdentifier>{63F4128A-C2E9-47A0-BE93-0DABFAD03A47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="算法头文件">
+      <UniqueIdentifier>{9279D621-5F65-410E-B07F-14007068AAFA}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\App.cpp">
+      <Filter>应用</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ImageEngine.cpp">
+      <Filter>应用</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ImageIO.cpp">
+      <Filter>应用</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SelfTests.cpp">
+      <Filter>应用</Filter>
+    </ClCompile>
+    <ClCompile Include="algorithms\src\wky_ALG_Inverting.cpp">
+      <Filter>算法源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="algorithms\src\wky_ALG_Histogram.cpp">
+      <Filter>算法源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="algorithms\src\wky_ALG_LinearStretch.cpp">
+      <Filter>算法源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="algorithms\src\wky_ALG_AverageFilter.cpp">
+      <Filter>算法源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="algorithms\src\wky_ALG_MedianFilter.cpp">
+      <Filter>算法源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="algorithms\src\wky_ALG_BinImgFilter.cpp">
+      <Filter>算法源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="algorithms\src\wky_ALG_EdgeDetect.cpp">
+      <Filter>算法源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="algorithms\src\wky_ALG_EdgeSharpen.cpp">
+      <Filter>算法源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="algorithms\src\wky_ALG_Threshold.cpp">
+      <Filter>算法源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="algorithms\src\wky_ALG_Cluster.cpp">
+      <Filter>算法源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="algorithms\src\wky_ALG_2DHistogram.cpp">
+      <Filter>算法源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="algorithms\src\wky_ALG_ContourTrace.cpp">
+      <Filter>算法源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="algorithms\src\wky_ALG_ContourFill.cpp">
+      <Filter>算法源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="algorithms\src\wky_ALG_HoughLine.cpp">
+      <Filter>算法源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="algorithms\src\bmpFile.cpp">
+      <Filter>算法源文件</Filter>
+    </ClCompile>
+    <ClInclude Include="src\ImageEngine.h">
+      <Filter>应用</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithms\include\bmpFile.h">
+      <Filter>算法头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithms\include\wky_algorithm_support.h">
+      <Filter>算法头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithms\include\wky_ALG_2DHistogram.h">
+      <Filter>算法头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithms\include\wky_ALG_AverageFilter.h">
+      <Filter>算法头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithms\include\wky_ALG_BinImgFilter.h">
+      <Filter>算法头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithms\include\wky_ALG_Cluster.h">
+      <Filter>算法头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithms\include\wky_ALG_ContourFill.h">
+      <Filter>算法头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithms\include\wky_ALG_ContourTrace.h">
+      <Filter>算法头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithms\include\wky_ALG_EdgeDetect.h">
+      <Filter>算法头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithms\include\wky_ALG_EdgeSharpen.h">
+      <Filter>算法头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithms\include\wky_ALG_Histogram.h">
+      <Filter>算法头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithms\include\wky_ALG_HoughLine.h">
+      <Filter>算法头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithms\include\wky_ALG_Inverting.h">
+      <Filter>算法头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithms\include\wky_ALG_LinearStretch.h">
+      <Filter>算法头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithms\include\wky_ALG_MedianFilter.h">
+      <Filter>算法头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithms\include\wky_ALG_Threshold.h">
+      <Filter>算法头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
